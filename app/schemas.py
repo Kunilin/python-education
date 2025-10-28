@@ -5,7 +5,6 @@ from pydantic import BaseModel, ConfigDict
 from typing import Optional
 
 class TaskBase(BaseModel):
-    task_id: int
     title: str
     description: Optional[str] = None
     status: str = "created"
@@ -21,6 +20,7 @@ class TaskUpdate(TaskBase):
 
 class Task(TaskBase):
     model_config = ConfigDict(from_attributes=True)
+
     id: int
     created_at: datetime
     updated_at: datetime

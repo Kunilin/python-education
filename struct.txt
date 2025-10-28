@@ -1,0 +1,15 @@
+task_manager/
+├── app/
+│   ├── main.py              # FastAPI приложение
+│   ├── database.py          # Настройка DB и SQLAlchemy
+│   ├── models.py            # SQLAlchemy модели
+│   ├── schemas.py           # Pydantic схемы
+│   ├── crud.py              # CRUD операции
+│   ├── dependencies.py      # Зависимости
+│   ├── kafka/
+│   │   ├── producer.py      # Kafka продюсер
+│   │   └── events.py        # Модели событий
+│   └── api/
+│       └── endpoints/
+│           └── tasks.py     # Эндпоинты для задач
+└── .env
