@@ -16,14 +16,6 @@
 ## Установка зависимостей
 - pip install -r requirements.txt 
 
-## Настройка переменных окружения
-Создай файл .env в корне проекта:
-
-- Database: DB_URL=postgresql+asyncpg://user:password@localhost:5432/task_manager
-
-- Kafka: 
-KAFKA_BOOTSTRAP_SERVER=localhost:9092 и KAFKA_TOPIC=task_events
-
 ## Запуск инфраструктуры (Docker)
 
 - Запусти PostgreSQL и Kafka: docker-compose up -d
